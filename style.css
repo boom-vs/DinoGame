@@ -1,0 +1,64 @@
+.game {
+    width: 800px;
+    height: 200px;
+    border-bottom: 2px solid #321;
+    margin: auto;
+}
+#dino {
+    width: 60px;
+    height: 60px;
+    background-image: url(img/rex-dinosaur-transparent-background-image-14.png);
+    background-size: 60px 60px;
+    position: relative;
+    top: 148px;
+}
+
+#cactus {
+    width: 40px; 
+    height: 40px; 
+    background-image: url(img/super-mario-brothers-147465_1280.png);
+    background-size: 40px 40px;
+    position: relative;
+    top: 100px;
+    left: 760px;
+    animation: cactusMov 1.8s infinite linear;
+    
+}
+
+
+
+
+@keyframes cactusMov { 
+    0% {
+       left: 770px;
+    }
+    100%{
+        left:  -760px;
+    }
+
+
+}
+
+.jump{
+
+    animation: jump 0.6s linear ;
+}
+@keyframes jump { 
+    0% {
+      top: 140px;
+    }
+
+    30%{
+       top: 70px;
+    }
+    50% {
+        top: 90px;
+      }
+  
+    80%{
+         top: 70px;
+      }
+    100%{
+        top: 140px;
+    }
+}
